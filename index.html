@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="jsmediatags.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="nomusic">
+			<button onclick="getFolder()">Select Folder</button>
+		</div>
+		<div id="songList" style="display: none"></div>
+		<div id="songStatus" style="display: none">
+			<button id="nextSong"></button>
+			<button id="songPause"></button>
+			<button id="prevSong"></button>
+			<button id="queue"></button>
+			<img src="img/blank.png" id="songCover" />
+			<div id="songText">
+				<h1 id="songName">Not Playing..</h1>
+				<h2 id="songArtist">Not Playing..</h2>
+				<div id="row">
+					<p id="currentSongPos">0:00</p>
+					<input type="range" id="songTime" max="10000" />
+					<p id="songLength">0:00</p>
+				</div>
+			</div>
+			<div id="queueList">
+
+			</div>
+		</div>
+	</body>
+</html>

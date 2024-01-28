@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Rubik", sans-serif;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+}
+div.song {
+	width: 80vw;
+	height: 10%;
+	display: flex;
+	text-align: center;
+	overflow-wrap: break-word;
+	background-color: aqua;
+	border-radius: 10px;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+}
+div.song img {
+	height: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 10px;
+}
+div.song h1 {
+	font-size: 1.5rem;
+	flex: 5;
+}
+div.song h2 {
+	font-size: 1rem;
+	text-wrap: wrap;
+	flex: 1;
+}
+
+#songStatus img {
+	float: left;
+	position: relative;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    justify-self: auto;
+}
+#songStatus input[type=range] {
+	width: 80%;
+}
+#songStatus button {
+	border: none;
+	background-color: #00000000;
+	float: right;
+	width: 2.5%;
+	margin: 0.1%;
+	aspect-ratio: 1/1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#songText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#row {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+div#songStatus {
+    bottom: 0;
+    position: fixed;
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}
+div#queueList {
+    bottom: 10.5vh;
+    position: fixed;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    text-align: center;
+    background-color: rgb(29, 43, 43);
+    border-radius: 10px;
+    padding: 10px;
+    left: 50%;
+    right: 0;
+    margin: 10px auto;
+	flex-direction: column;
+	display: flex;
+}
+button#songPause {
+	background-image: url(img/pause.svg);
+
+}
+button#prevSong {
+	background-image: url(img/back.svg);
+
+}
+button#nextSong {
+	background-image: url(img/next.svg);
+
+}
+button#queue {
+	background-image: url(img/queue.svg);
+
+}
+button#moveUp {
+	background-image: url(img/up.svg);
+	width: 6%;
+
+}
+button#moveDown {
+	background-image: url(img/down.svg);
+	width: 6%;
+
+}
+button#removeSong {
+	background-image: url(img/remove.svg);
+	width: 6%;
+}
+.song.queuesong h1 {
+	font-size: 1em;
+}
+div.song.queueSong {
+	width: 96%;
+}
+div.playing {
+	background-color: azure;
+}
